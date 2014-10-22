@@ -134,6 +134,7 @@
 				padding-left: 37px;
 				padding-right: 35px;
 				background-color: rgba(91, 192, 222, 0.15);
+				border-top-right-radius: 20px;
 			}
 			.disease-body {
 				margin-right: 30px;
@@ -141,6 +142,7 @@
 				padding-left: 37px;
 				padding-right: 35px;
 				background-color: rgba(91, 192, 222, 0.15);
+				border-bottom-right-radius: 20px;
 				height: 604px;
 				.video {
 					&.right {
@@ -436,6 +438,9 @@
 		}
 		.heading-text {
 			font-size: 18px;
+		}
+		.text {
+			height: 505px;
 		}
 	}
 }
