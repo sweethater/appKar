@@ -1,0 +1,441 @@
+.modal-content {
+	background: rgba(255, 255, 255, .9);
+}
+.modal-header {
+	margin-bottom: 4px;
+	.header > div {
+		display: inline-block;
+	}
+	.icon {
+		color: #10b7d2;
+	}
+}
+.modal-body {
+	padding: 0px;
+}
+
+
+
+#suscchModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 50px auto;
+		width: 1600px;
+	}
+	ul.nav.nav-pills {
+		width: 800px;
+		li {
+			width: 350px;
+			margin: 0px 20px;
+			a {
+				font-size: 26px;
+			}
+		}
+	}
+	#about {
+		color: #337DA1;
+		font-size: 17px;
+		text-align: justify;
+		.images1 {
+			float: right;
+			padding-left: 25px;
+		}
+		.images2 {
+			float: left;
+			padding-right: 25px;
+		}
+	}
+	#contacts {
+		color: #337DA1;
+		.name.big {
+			text-align: center;
+			font-size: 28px;
+		}
+		ul {
+			font-size: 22px;
+			li > div {
+				display: inline-block;
+			}
+			.name {
+				width: 190px;
+			}
+		}
+		ul.first-line {
+			margin-left: 33px;
+			padding-bottom: 50px;
+		}
+		ul.second-line {
+			margin-left: 75px;
+		}
+
+	}
+}
+
+#diseaseModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 100px auto;
+		width: 1600px;
+	}
+	.modal-body {
+		padding: 0px;
+	}
+	.modal-content {
+		height: 900px;
+		.tab-content {
+			height: 620px;
+		}
+	}
+	ul.nav.nav-pills {
+		width: 1300px;
+		li {
+			width: 620px;
+			margin: 0px 10px;
+			a {
+				font-size: 22px;
+				text-align: center;
+			}
+		}
+	}
+	ul.nav.nav-tabs {
+		width: 371px;
+		height: 630px;
+		li {
+			padding-left: 15px;
+			width:370px;
+			a {
+				font-size: 18px;
+				text-align: center;
+				padding: 16px 10px;
+				font-size: 21px;
+			}
+		}
+
+	}
+
+	.disease-info.tab-pane {
+
+		.body {
+			height: 602px;
+
+			color: #337DA1;
+			h3.head {
+				text-align: center;
+				font-size: 25px;
+				margin-bottom: 0px;
+				margin-right: 30px;
+				margin-left: 369px;
+				padding-left: 37px;
+				padding-right: 35px;
+				background-color: rgba(91, 192, 222, 0.15);
+			}
+			.disease-body {
+				margin-right: 30px;
+				margin-left: 369px;
+				padding-left: 37px;
+				padding-right: 35px;
+				background-color: rgba(91, 192, 222, 0.15);
+				height: 604px;
+				.video {
+					&.right {
+						float: right;
+						padding-left: 15px;
+					}
+					&.left {
+						float: left;
+						padding-right: 15px;
+					}
+				}
+				p {
+					font-size: 17px;
+					text-align: justify;
+				}
+				.heading-text {
+					font-size: 18px;
+				}
+
+			}
+		}
+	}
+}
+
+#ambulanceModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 100px auto;
+		width: 1700px;
+	}
+	.modal-body {
+		padding: 0px;
+	}
+	.modal-content {
+		height: 900px;
+	}
+
+	ul.nav.nav-tabs {
+		width: 311px;
+		height: 710px;
+		li {
+			padding-left: 15px;
+			width: 310px;
+			a {
+				font-size: 18px;
+				padding: 30px 15px;
+			}
+		}
+	}
+	.tab-content {
+		color: #337DA1;
+		.body {
+			.header {
+				text-align: center;
+			}
+			.text {
+				font-size: 18px;
+				text-align: justify;
+				p {
+					padding-right: 50px;
+				}
+			}
+			images {
+				float:left;
+				padding-right: 15px;
+
+			}
+		}
+	}
+}
+
+#rehabModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 100px auto;
+		width: 1600px;
+	}
+	ul.nav.nav-pills {
+		width: 1300px;
+		li {
+			width: 600px;
+			margin: 0px 20px;
+			a {
+				font-size: 23px;
+				&.first {
+					padding: 35px 15px;
+				}
+			}
+		}
+	}
+	#rehab1 {
+		.tab-body {
+			height: 600px;
+			text-align: justify;
+			color: #337DA1;
+			font-size:18px;
+			images {
+				float: left;
+				padding-right: 15px;
+			}
+		}
+	}
+	#rehab2 {
+		.tab-body {
+			height: 600px;
+			text-align: justify;
+			color: #337DA1;
+			font-size:18px;
+			images {
+				margin-left: 70px;
+			}
+		}
+	}
+}
+
+
+#trafficModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 50px auto;
+		width: 1600px;
+	}
+	.modal-body {
+		padding: 0px;
+	}
+	.modal-content {
+		height: 1000px;
+	}
+	ul.nav.nav-pills {
+		width: 840px;
+		li {
+			width: 400px;
+			margin: 0px 10px;
+			a {
+				font-size: 22px;
+			}
+		}
+	}
+	ul.nav.nav-tabs {
+		width: 185px;
+		height: 600px;
+		li {
+			padding-left: 15px;
+			width: 184px;
+			a {
+				font-size: 22px;
+				padding: 30px 15px;
+				text-align: center;
+			}
+		}
+	}
+	#traffic1 {
+		.tab-content {
+			color: #337DA1;
+			font-weight: bolder;
+			.body {
+				width: 1600px;
+
+				.tables-heading {
+					font-size: 25px;
+					.bus-normal,
+					.bus-weekend {
+						display: inline-block
+					}
+					.bus-normal {
+						padding-left: 340px;
+					}
+					.bus-weekend {
+						padding-left: 290px;
+					}
+				}
+
+				table.table {
+					width: 550px;
+					padding-left: 280px;
+				}
+				table.table.weekend {
+
+					padding-left: 170px;
+				}
+				&>table {
+					display: inline-block;
+				}
+				.table {
+					font-weight: bolder;
+					font-size: 17px;
+					thead {
+						tr {
+							th {
+								border-color: #10b7d2;
+								text-align: center;
+							}
+						}
+					}
+					tbody {
+						tr {
+							td {
+								border-color: #10b7d2;
+								padding: 3px;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+
+	#traffic2 {
+		.taxi-body {
+			height: 660px;
+		}
+		color: #337DA1;
+		li {
+			font-size: 18px;
+		}
+		.last {
+			height: 173px;
+		}
+	}
+}
+
+#userInfoModal.modal {
+	overflow:hidden;
+	.modal-title {
+		color: #10b7d2;
+	}
+	.modal-dialog {
+		margin: 100px auto;
+		width: 1600px;
+	}
+	.modal-body {
+		padding: 0px;
+	}
+	.modal-content {
+		height: 900px;
+	}
+	ul.nav.nav-pills {
+		width: 1200px;
+		li {
+			width: 550px;
+			margin: 0px 10px;
+			a {
+				font-size: 22px;
+			}
+		}
+	}
+	ul.nav.nav-tabs.insurance {
+		width: 185px;
+		height: 600px;
+		li {
+			padding-left: 15px;
+			width: 184px;
+			a {
+				font-size: 25px;
+				padding: 40px 20px;
+				margin-bottom: 40px;
+			}
+		}
+	}
+
+	ul.nav.nav-tabs.drugs {
+		width: 185px;
+		height: 600px;
+		li {
+			padding-left: 15px;
+			width: 184px;
+			a {
+				font-size: 22px;
+				padding: 23px 20px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	#user1,
+	#user2 {
+		color: #337DA1;
+		h3.head {
+			text-align: center;
+			font-size: 30px;
+
+		}
+		.heading-text {
+			font-size: 18px;
+		}
+	}
+}

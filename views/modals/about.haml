@@ -1,0 +1,124 @@
+#suscchModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        .header
+          .icon 
+            %i.flaticon-caduceus1
+          .text
+            %h2#myModalLabel.modal-title Informácie o SUSCCH a.s.
+      .modal-body
+        %center
+          %ul.nav.nav-pills
+            %li.about.active
+              %a{"data-toggle" => "pill", :href => "#about"} 
+                .icon
+                  %i.flaticon-information38
+                .text Základne info
+            %li.contacts
+              %a{"data-toggle" => "pill", :href => "#contacts"} 
+                .icon
+                  %i.flaticon-medical51
+                .text Personál
+
+        %hr.blue
+
+        .tab-content
+          #about.tab-pane.fade.in.active
+            .container.about
+              .row
+                .col-md-12
+                  %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                  .images1
+                    %a.about-foto-1{"data-lightbox" => "about-foto-1", "data-title" => "", :href => "images/about/about1.jpg"}
+                      %img.img-thumbnail{:src=>"images/about/about1s.jpg"}
+                    %a.about-foto-2{"data-lightbox" => "about-foto-2", "data-title" => "", :href => "images/about/about2.jpg"}
+                      %img.img-thumbnail{:src=>"images/about/about2s.jpg"}
+
+                  %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Duis iaculis tincidunt interdum. Mauris mattis fringilla mi, id pellentesque sapien accumsan at.
+
+                  .images2
+                    %a.about-foto-3{"data-lightbox" => "about-foto-3", "data-title" => "", :href => "images/about/about3.jpg"}
+                      %img.img-thumbnail{:src=>"images/about/about3s.jpg"}
+                    %a.about-foto-4{"data-lightbox" => "about-foto-4", "data-title" => "", :href => "images/about/about4.jpg"}
+                      %img.img-thumbnail{:src=>"images/about/about4s.jpg"}
+
+                    
+                  %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et.
+
+          #contacts.tab-pane.fade
+            .container.contacts
+              .row
+                .col-md-12
+                  .col-md-5.col-md-offset-1
+
+                    .section
+                      .name.big Doktory
+                      %ul.list.first-line
+                        %li
+                          .name MUDr. Pavol
+                          .phone 044/4729 705
+                        %li
+                          .name MUDr. Maria
+                          .phone 044/4729 706
+                        %li
+                          .name MUDr. Kondera
+                          .phone 044/4729 709
+                        %li
+                          .name MUDr. Balog
+                          .phone 044/4729 716
+                        %li
+                          .name MUDr. Trabal
+                          .phone 044/4729 716
+                        %li
+                          .name MUDr. Muran
+                          .phone 044/4729 716
+
+                  .col-md-5
+
+                    .section
+                      .name.big Sestry
+                      %ul.list.first-line
+                        %li
+                          .name Sekeréšová
+                          .phone 044/4729 702
+                        %li
+                          .name Nemecka
+                          .phone 044/4729 704
+                        %li
+                          .name Medveďová
+                          .phone 044/4729 703
+                        %li
+                          .name Hladna
+                          .phone 044/4729 707
+                        %li
+                          .name Mudra
+                          .phone 044/4729 712
+                        %li
+                          .name Mudronova
+                          .phone 044/4729 713
+
+
+                  .col-md-6.col-md-offset-3.second-line
+                    .section
+                      .name.big Sekretariát spoločnosti
+                      %ul.list.second-line
+                        %li
+                          .name Bc. Bednárik
+                          .phone 044/4729 700
+                        %li
+                          .name Ing. Pavelka
+                          .phone 044/4729 777
+                        %li
+                          .name Mudronova
+                          .phone 044/4729 717
+
+
+
+
+
+
+      .modal-footer
+        %button.btn.btn-lg.btn-close{"data-dismiss" => "modal", :type => "button"} Zavrieť

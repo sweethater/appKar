@@ -1,0 +1,60 @@
+#ambulanceModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        .header
+          .icon 
+            %i.flaticon-hospital11
+          .text
+            %h2#myModalLabel.modal-title Ambulancie a Lekáreň
+      .modal-body
+        .tabbable.tabs-left
+          %ul.nav.nav-tabs.nav-global
+            %li.active
+              %a{"data-toggle" => "tab", :href => "#ambulance1"} Ambulancia urgentného príjmu
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance2"} Kardiologická ambulancia
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance3"} Arytmologická ambulancia
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance4"} Cievna ambulancia
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance5"} Ambulancia funkčnej diagnostiky
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance6"} ECHO ambulancia
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance7"} EKG ambulancia
+            %li
+              %a{"data-toggle" => "tab", :href => "#ambulance8"} Lekáreň KARDIOFARM
+        .tab-content
+
+          #ambulance1.tab-pane.fade.city.in.active
+            = haml :"modals/ambulance_pharmacy1"
+
+          #ambulance2.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy2"
+
+          #ambulance3.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy1"
+
+          #ambulance4.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy2"
+
+          #ambulance5.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy1"
+
+          #ambulance6.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy2"
+
+          #ambulance7.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy1"
+
+          #ambulance8.tab-pane.fade
+            = haml :"modals/ambulance_pharmacy2"
+
+
+
+
+      .modal-footer
+        %button.btn.btn-lg.btn-close{"data-dismiss" => "modal", :type => "button"} Zavrieť

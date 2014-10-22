@@ -1,0 +1,410 @@
+#diseaseModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        .header
+          .icon 
+            %i.flaticon-heart275
+          .text
+            %h2#myModalLabel.modal-title Kardiovaskulárne ochorenia
+      .modal-body
+        %center
+          %ul.nav.nav-pills
+            %li.active
+              %a{"data-toggle" => "pill", :href => "#diseaseType1"} Kardiologické ochorenia
+            %li
+              %a{"data-toggle" => "pill", :href => "#diseaseType2"} Angiologické ochorenia 
+
+      %hr.blue
+
+        .tab-content
+
+          #diseaseType1.tab-pane.fade.in.active
+            .tabbable.tabs-left
+              %ul.nav.nav-tabs.nav-global
+                %li.active
+                  %a{"data-toggle" => "tab", :href => "#disease1"} Ochorenia koronárnych tepien
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease2"} Kardiomyopatie
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease3"} Srdcové zlyhanie
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease4"} Arteriálna hypertenzia (Vysoký krvný tlak)
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease5"} Poruchy rytmu (Dysrytmie, Arytmie)
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease6"} Zápalové ochorenie srdca
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease7"} Chlopňové ochorenia
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease7"} Reumatická horúčka
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease7"} Vrodené vývojové vady srdca
+
+              .tab-content
+
+                #disease1.disease-info.tab-pane.fade.city.in.active
+                  .body
+                    .text
+                      %h3.head
+                        %b Ochorenia koronárnych tepien
+                      .disease-body
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        .video.right
+                          %video#disease1-vid1{:preload=>"auto", :width=>480, :height=>270}
+                            %source{:src => "/videos/disease1-1/Arrhythmias_Explained.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus faucibus ultricies.
+
+
+                      / %images
+                      /   %a.example-aa-1{"data-lightbox" => "example-aa-1", "data-title" => "", :href => "images/devices/a.jpg"}
+                      /     %img.img-thumbnail{:src=>"images/devices/a_s.png"}
+                      /   %a.example-aa-2{"data-lightbox" => "example-aa-1", "data-title" => "", :href => "images/devices/a2.jpg"}
+                      /     %img.img-thumbnail{:src=>"images/devices/a2_s.png"}
+
+                #disease2.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Kardiomyopatie
+                      .disease-body
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        .video.left
+                          %video#disease1-vid2{:preload=>"auto", :width=>480, :height=>270}
+                            %source{:src => "/videos/disease1-2/Atrial_Flutter.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus faucibus ultricies.
+
+
+                #disease3.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Srdcové zlyhanie
+                      .disease-body
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        .video.right
+                          %video#disease1-vid3{:preload=>"auto", :width=>480, :height=>270}
+                            %source{:src => "/videos/disease1-3/Heart_Block.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus faucibus ultricies.
+
+
+
+                #disease4.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Arteriálna hypertenzia (Vysoký krvný tlak)
+                      .disease-body
+
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        .video.left
+                          %video#disease1-vid4{:preload=>"auto", :width=>480, :height=>270}
+                            %source{:src => "/videos/disease1-4/Inside_Healthy_Heart.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus faucibus ultricies.
+
+
+
+                #disease5.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Poruchy rytmu (Dysrytmie, Arytmie)
+                      .disease-body
+
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        / .video
+                        /   %video#disease1-vid1{:preload=>"auto", :width=>480, :height=>270}
+                        /     %source{:src => "/videos/disease1-1/Arrhythmias_Explained.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus faucibus ultricies.
+
+
+
+                #disease6.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+                #disease7.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+
+
+          #diseaseType2.tab-pane.fade
+            .tabbable.tabs-left
+              %ul.nav.nav-tabs.nav-global
+                %li.active
+                  %a{"data-toggle" => "tab", :href => "#disease21"} Periférne arteriálne ochorenie
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease22"} Ochorenia aorty (aneuryzmy, disekcie, stenózy)
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease23"} Cievna mozgová príhoda
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease24"} Hlboká žilová trombóza (Flebotrombóza)
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease25"} Zápalové ochorenia povrchového žilového systému (Tromboflebitída)
+                %li
+                  %a{"data-toggle" => "tab", :href => "#disease26"} Chronická venózna nedostatočnosť a varixy DKK
+
+
+              .tab-content
+
+                #disease21.disease-info.tab-pane.fade.city.in.active
+                  .body
+                    .text
+                      %h3.head
+                        %b Periférne arteriálne ochorenie
+                      .disease-body
+
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+                        / .video
+                        /   %video#disease1-vid1{:preload=>"auto", :width=>480, :height=>270}
+                        /     %source{:src => "/videos/disease1-1/Arrhythmias_Explained.webm", :type => "video/webm"}
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus 
+
+                #disease22.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Ochorenia aorty (aneuryzmy, disekcie, stenózy)
+                      .disease-body
+
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus
+
+
+
+
+                #disease23.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3.head
+                        %b Cievna mozgová príhoda
+                      .disease-body
+
+                        .heading
+                          .heading-text
+                            Charakteristika
+                            %hr.blue
+                        .text
+                          %p Curabitur convallis porttitor nunc at pretium. Quisque sollicitudin vel tellus viverra elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lobortis libero vitae dolor imperdiet, vitae molestie sem tincidunt. Nullam molestie blandit ligula vitae lobortis. Vestibulum ultricies nunc ut convallis hendrerit. Maecenas porttitor mauris quis lacinia tempus. Sed facilisis est urna, quis maximus tortor elementum eget. Nunc quis nibh dictum, interdum enim eget, accumsan diam. Sed eu odio a sapien porta vehicula. Nam quam ligula, imperdiet quis consequat in, suscipit eu ex. In hac habitasse platea dictumst. Mauris mattis fringilla mi, id pellentesque sapien accumsan at. Integer libero ex, ultricies eu urna et, scelerisque feugiat neque. Maecenas at ligula et eros semper aliquet.
+
+                          %p Vestibulum tempor vel mi et consectetur. Nullam vehicula nisi non mauris commodo posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet quam vel interdum ultricies. Aliquam erat volutpat. Donec auctor odio et elementum aliquet. Mauris accumsan, eros cursus interdum sollicitudin, justo purus viverra leo, non iaculis nisi metus vitae nulla. Cras ut elementum lacus. Etiam sit amet finibus velit. Vivamus a nulla a sapien dignissim elementum. Praesent viverra sapien gravida placerat mattis. Donec non tristique velit. Nunc viverra velit eu nulla placerat, in semper urna auctor. Sed in odio ipsum. Donec luctus accumsan purus eu cursus. Aliquam et mi at orci commodo suscipit at sed augue.
+
+
+                        .heading
+                          .heading-text
+                            Liečba
+                            %hr.blue
+
+                        .text
+                          %p Donec neque ipsum, sollicitudin quis efficitur et, congue eu quam. Sed tincidunt feugiat purus, ut elementum nulla vehicula sed. Ut efficitur, nunc eget vestibulum lobortis, odio odio elementum tellus, in ullamcorper nisl nunc nec diam. Fusce venenatis lobortis nunc. Integer a scelerisque turpis. Etiam efficitur tortor eu ultricies laoreet. Fusce felis justo, convallis quis sem tristique, sodales molestie tellus. Donec et arcu pellentesque, cursus felis quis, convallis felis. Nam non magna sollicitudin turpis ultricies euismod sit amet sed quam. Nulla vel lectus a magna facilisis sollicitudin at vitae tortor. Duis iaculis tincidunt interdum. Donec feugiat aliquet turpis nec sagittis. Pellentesque sed eros metus. Sed fermentum, leo tempus luctus pretium, leo nibh laoreet ipsum, id varius enim libero in arcu. Duis pellentesque mauris in purus
+
+                          
+
+                #disease24.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+                #disease25.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+                #disease26.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+                #disease27.disease-info.tab-pane.fade
+                  .body
+                    .text
+                      %h3
+                        %b Disease B
+                      %ul.list
+                        %li
+                          Zdravotnícke pomôcky pre inkontinenciu, retenciu moču
+                        %li
+                          Objednávame na základe požiadavky pacientov
+
+                      %images
+                        %a.example-bb-1{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b_s.png"}
+                        %a.example-bb-2{"data-lightbox" => "example-bb-1", "data-title" => "", :href => "images/devices/b2.jpg"}
+                          %img.img-thumbnail{:src=>"images/devices/b2_s.png"}
+
+
+
+      .modal-footer
+        %button.btn.btn-lg.btn-close{"data-dismiss" => "modal", :type => "button"} Zavrieť

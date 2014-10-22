@@ -1,0 +1,103 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %title Kardio
+
+    / %link{:href => "/css/jquery.carousel.fullscreen.css", :rel => "stylesheet"}/
+    %link{:href => "/css/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "/css/kardio.css", :rel => "stylesheet"}
+    %link{:href => "/css/buttons.css", :rel => "stylesheet"}
+    %link{:href => "/css/modals.css", :rel => "stylesheet"}
+    %link{:href => "/css/bootstrap-tabs.css", :rel => "stylesheet"}
+    %link{:href => "/css/jsKeyboar  d.css", :rel => "stylesheet"}
+    %link{:href => "/css/jquery.multilevelpushmenu.css", :rel => "stylesheet"}
+    %link{:href => "/css/flaticon/flaticon.css", :rel => "stylesheet"}
+    %link{:href => "/css/jsKeyboard.css", :rel => "stylesheet"}
+    %link{:href => "/css/video-js.min.css", :rel => "stylesheet"}
+    %link{:href => "/css/lightbox.css", :rel => "stylesheet"}
+
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css", :rel => "stylesheet"}
+    / !!!!!
+    / STATICKY FONT !!!!
+    / !!!!!
+    %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,cyrillic-ext,latin-ext,cyrillic", :rel => "stylesheet", :type => "text/css"}/
+
+
+    %link{:href => "/images/favicon.png", :rel => "icon", :type => "image/png"}
+
+    %script{:src => "/js/jquery-2.1.0.js", :type => "text/javascript"}
+    %script{:src => "/js/kardio.js", :type => "text/javascript"}
+    %script{:src => "/js/clock.js", :type => "text/javascript"}
+    %script{:src => "/js/bootstrap.js", :type => "text/javascript"}
+    %script{:src => "/js/jsKeyboard.js", :type => "text/javascript"}
+    %script{:src => "/js/video.js", :type => "text/javascript"}
+    %script{:src => "/js/mediaelement-and-player.min.js", :type => "text/javascript"}
+    %script{:src => "/js/lightbox.js", :type => "text/javascript"}
+
+    %script{:src => "/js/jquery.multilevelpushmenu.js", :type => "text/javascript"} 
+
+  %body
+
+    / #loader
+    /   %img.loader-logo{ :src=> "images/vitruvian-loader.png" }
+
+    #wrapper
+
+      %video#bgvid{:preload=>"auto", :autoplay=>"true", :muted=>"muted", :volume=>"0"}
+        %source{:src => "/videos/human_heart.webm", :type => "video/webm"}
+
+
+      = yield
+
+      #footer_navigation
+        .first-line
+          %button.btn.btn-nav.btn-lg{:type => "button", "data-target" => "#suscchModal", "data-toggle" => "modal"}
+            .icon
+              %i.flaticon-caduceus1
+            .text Informácie o SUSCCH a.s.
+          %button.btn.btn-nav.btn-lg.btn-nav-offset{:type => "button", "data-target" => "#diseaseModal", "data-toggle" => "modal"}
+            .icon
+              %i.flaticon-heart275
+            .text Kardiovaskulárne ochorenia
+          %button.btn.btn-nav.btn-lg.btn-nav-offset{:type => "button", "data-target" => "#ambulanceModal", "data-toggle" => "modal"}
+            .icon
+              %i.flaticon-hospital11
+            .text Ambulancie a Lekáreň
+        .second-line
+          %button.btn.btn-nav.btn-lg{:type => "button", "data-target" => "#rehabModal", "data-toggle" => "modal"} 
+            .icon
+              %i.flaticon-patient3
+            .text Rehabilitácie KVS ochorení
+          %button.btn.btn-nav.btn-lg.btn-nav-offset{:type => "button", "data-target" => "#trafficModal", "data-toggle" => "modal"}
+            .icon
+              %i.flaticon-bus3
+            .text Dopravné informácie
+          %button.btn.btn-nav.btn-lg.btn-nav-offset{:type => "button", "data-target" => "#userInfoModal", "data-toggle" => "modal"}
+            .icon
+              %i.flaticon-info2
+            .text Informácie pre klientov
+
+      / %a#trigger.menu-trigger{:href => "#"} Open/Close Menu
+
+      / #clock
+      / #clock-icon
+      /   %img{ :src=>"images/clock.svg"}
+      / #calendar
+      / #calendar-icon
+      /   %img{ :src=>"images/calendar.svg"}
+      
+
+
+      = haml :"modals/about"
+      = haml :"modals/disease"
+      = haml :"modals/ambulance"
+      = haml :"modals/rehab"
+      = haml :"modals/traffic"
+      = haml :"modals/userInfo" 
+
+
+    #virtualKeyboard
+
+
+

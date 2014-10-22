@@ -1,0 +1,226 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 40px;
+font-style: normal;
+/*margin-left: 20px;*/
+}.flaticon-ambulance:before {
+	content: "\e000";
+}
+.flaticon-bandaid:before {
+	content: "\e001";
+}
+.flaticon-biology:before {
+	content: "\e002";
+}
+.flaticon-blood11:before {
+	content: "\e003";
+}
+.flaticon-blood8:before {
+	content: "\e004";
+}
+.flaticon-brain5:before {
+	content: "\e005";
+}
+.flaticon-bus28:before {
+	content: "\e006";
+}
+.flaticon-bus3:before {
+	content: "\e007";
+}
+.flaticon-bus5:before {
+	content: "\e008";
+}
+.flaticon-bus7:before {
+	content: "\e009";
+}
+.flaticon-caduceus1:before {
+	content: "\e00a";
+}
+.flaticon-caduceus4:before {
+	content: "\e00b";
+}
+.flaticon-clinic2:before {
+	content: "\e00c";
+}
+.flaticon-drugs:before {
+	content: "\e00d";
+}
+.flaticon-drugs5:before {
+	content: "\e00e";
+}
+.flaticon-ecg2:before {
+	content: "\e00f";
+}
+.flaticon-emergency7:before {
+	content: "\e010";
+}
+.flaticon-first1:before {
+	content: "\e011";
+}
+.flaticon-first2:before {
+	content: "\e012";
+}
+.flaticon-first21:before {
+	content: "\e013";
+}
+.flaticon-halloween250:before {
+	content: "\e014";
+}
+.flaticon-handicap2:before {
+	content: "\e015";
+}
+.flaticon-heart161:before {
+	content: "\e016";
+}
+.flaticon-heart254:before {
+	content: "\e017";
+}
+.flaticon-heart256:before {
+	content: "\e018";
+}
+.flaticon-heart258:before {
+	content: "\e019";
+}
+.flaticon-heart27:before {
+	content: "\e01a";
+}
+.flaticon-heart275:before {
+	content: "\e01b";
+}
+.flaticon-heart285:before {
+	content: "\e01c";
+}
+.flaticon-hospital11:before {
+	content: "\e01d";
+}
+.flaticon-hospital16:before {
+	content: "\e01e";
+}
+.flaticon-hospital3:before {
+	content: "\e01f";
+}
+.flaticon-illness:before {
+	content: "\e020";
+}
+.flaticon-info2:before {
+	content: "\e021";
+}
+.flaticon-info21:before {
+	content: "\e022";
+}
+.flaticon-info4:before {
+	content: "\e023";
+}
+.flaticon-information1:before {
+	content: "\e024";
+}
+.flaticon-information38:before {
+	content: "\e025";
+}
+.flaticon-invalid:before {
+	content: "\e026";
+}
+.flaticon-lifeline:before {
+	content: "\e027";
+}
+.flaticon-lifeline8:before {
+	content: "\e028";
+}
+.flaticon-lungs4:before {
+	content: "\e029";
+}
+.flaticon-man365:before {
+	content: "\e02a";
+}
+.flaticon-man412:before {
+	content: "\e02b";
+}
+.flaticon-medical10:before {
+	content: "\e02c";
+}
+.flaticon-medical14:before {
+	content: "\e02d";
+}
+.flaticon-medical44:before {
+	content: "\e02e";
+}
+.flaticon-medical50:before {
+	content: "\e02f";
+}
+.flaticon-medical51:before {
+	content: "\e030";
+}
+.flaticon-medical55:before {
+	content: "\e031";
+}
+.flaticon-medical9:before {
+	content: "\e032";
+}
+.flaticon-microscope13:before {
+	content: "\e033";
+}
+.flaticon-patient2:before {
+	content: "\e034";
+}
+.flaticon-patient3:before {
+	content: "\e035";
+}
+.flaticon-patient4:before {
+	content: "\e036";
+}
+.flaticon-person287:before {
+	content: "\e037";
+}
+.flaticon-pharmacy8:before {
+	content: "\e038";
+}
+.flaticon-pill:before {
+	content: "\e039";
+}
+.flaticon-positive3:before {
+	content: "\e03a";
+}
+.flaticon-pulse1:before {
+	content: "\e03b";
+}
+.flaticon-skeleton:before {
+	content: "\e03c";
+}
+.flaticon-stethoscope1:before {
+	content: "\e03d";
+}
+.flaticon-stethoscope11:before {
+	content: "\e03e";
+}
+.flaticon-syringe:before {
+	content: "\e03f";
+}
+.flaticon-syringe6:before {
+	content: "\e040";
+}
+.flaticon-taxi13:before {
+	content: "\e041";
+}
+.flaticon-taxi14:before {
+	content: "\e042";
+}
+.flaticon-water12:before {
+	content: "\e043";
+}
+.flaticon-water42:before {
+	content: "\e044";
+}
+.flaticon-xray2:before {
+	content: "\e045";
+}

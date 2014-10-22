@@ -1,0 +1,138 @@
+#trafficModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} &times;
+        .header
+          .icon 
+            %i.flaticon-bus3
+          .text
+            %h2#myModalLabel.modal-title Dopravné informácie
+      .modal-body
+        %center
+          %ul.nav.nav-pills
+            %li.active
+              %a{"data-toggle" => "pill", :href => "#traffic1"} 
+                .icon
+                  %i.flaticon-bus3
+                .text Autobusové linky zo SUSCCH a.s.
+            %li
+              %a{"data-toggle" => "pill", :href => "#traffic2"}
+                .icon
+                  %i.flaticon-taxi13
+                .text Taxi-služby Banskej Bystrice a okolia
+
+      %hr.blue
+
+        .tab-content
+
+          #traffic1.tab-pane.fade.in.active
+            .tabbable.tabs-left
+              %ul.nav.nav-tabs.nav-global
+                %li.active
+                  %a{"data-toggle" => "tab", :href => "#bus1"} Linka A
+                %li
+                  %a{"data-toggle" => "tab", :href => "#bus2"} Linka B
+                %li
+                  %a{"data-toggle" => "tab", :href => "#bus3"} Linka C
+                %li
+                  %a{"data-toggle" => "tab", :href => "#bus4"} Linka D
+                %li
+                  %a{"data-toggle" => "tab", :href => "#bus5"} Linka E
+
+
+              .tab-content
+
+                #bus1.tab-pane.fade.city.in.active
+                  .body
+
+                    = haml :"modals/traffic_mock"
+
+
+                #bus2.tab-pane.fade
+                  .body
+
+                    = haml :"modals/traffic_mock"
+
+
+                #bus3.tab-pane.fade
+                  .body
+                    = haml :"modals/traffic_mock"
+
+
+                #bus4.tab-pane.fade
+                  .body
+                    = haml :"modals/traffic_mock"
+
+
+                #bus5.tab-pane.fade
+                  .body
+                    = haml :"modals/traffic_mock"
+
+
+
+
+          #traffic2.tab-pane.fade
+            .taxi-body
+              .col-md-10.col-md-offset-2
+                .first-row
+                  .col-md-4.col-md-offset-1
+                    .bs-callout.bs-callout-info
+                      .text
+                        %h3
+                          %b One Taxi
+                      %ul.number-list
+                        %li
+                          0905 44 25 44
+                        %li
+                          0911 44 52 44
+                        %li
+                          0948 49 69 69
+                      %br
+
+                  .col-md-4
+                    .bs-callout.bs-callout-info
+                      .text
+                        %h3
+                          %b Fun Taxi
+                      %ul.number-list
+                        %li
+                          0908 888 877
+                        %li
+                          0903 035 505
+                        %li
+                          0949 510 530
+                      %br
+
+
+              .col-md-10.col-md-offset-2
+                .second-row
+                  .col-md-4.col-md-offset-1
+                    .bs-callout.bs-callout-info
+                      .text
+                        %h3
+                          %b Expres Taxi
+                      %ul.number-list
+                        %li
+                          0902 41 00 41
+                        %li
+                          0911 61 61 61
+                        %li
+                          0948 11 44 77
+                      %br
+
+                  .col-md-4
+                    .bs-callout.bs-callout-info.last
+                      .text
+                        %h3
+                          %b Synby Taxi
+                      %ul.number-list
+                        %li
+                          0905 144 808
+                        %li
+                          0903 188 565
+                      %br
+
+
+      .modal-footer
+        %button.btn.btn-lg.btn-close{"data-dismiss" => "modal", :type => "button"} Zavrieť
