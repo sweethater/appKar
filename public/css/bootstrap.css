@@ -2022,7 +2022,7 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333;
+  /*color: #333;*/
   text-decoration: none;
 }
 .btn:active,
